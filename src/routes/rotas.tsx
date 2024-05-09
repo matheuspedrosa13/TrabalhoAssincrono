@@ -3,7 +3,7 @@ import {} from "../libs";
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: {},
+        // element: {},
         children: [{
 
         }, {
