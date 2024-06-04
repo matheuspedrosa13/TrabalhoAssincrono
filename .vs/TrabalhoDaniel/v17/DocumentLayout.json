@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{108A2EBE-0C5F-4E67-B9C2-AB53C3019257}|TrabalhoDaniel\\TrabalhoDaniel.csproj|c:\\users\\g47664\\downloads\\trabalhodaniel\\trabalhodaniel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{108A2EBE-0C5F-4E67-B9C2-AB53C3019257}|TrabalhoDaniel\\TrabalhoDaniel.csproj|solutionrelative:trabalhodaniel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{108A2EBE-0C5F-4E67-B9C2-AB53C3019257}|TrabalhoDaniel\\TrabalhoDaniel.csproj|c:\\users\\g47664\\downloads\\trabalhodaniel\\trabalhodaniel\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{108A2EBE-0C5F-4E67-B9C2-AB53C3019257}|TrabalhoDaniel\\TrabalhoDaniel.csproj|solutionrelative:trabalhodaniel\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE9400DA-DCA4-491C-BE4A-24CC34A37197}|TrabalhoDaniel.Service\\TrabalhoDaniel.Service.csproj|c:\\users\\g47664\\downloads\\trabalhodaniel\\trabalhodaniel.service\\services\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE9400DA-DCA4-491C-BE4A-24CC34A37197}|TrabalhoDaniel.Service\\TrabalhoDaniel.Service.csproj|solutionrelative:trabalhodaniel.service\\services\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE9400DA-DCA4-491C-BE4A-24CC34A37197}|TrabalhoDaniel.Service\\TrabalhoDaniel.Service.csproj|c:\\users\\g47664\\downloads\\trabalhodaniel\\trabalhodaniel.service\\services\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE9400DA-DCA4-491C-BE4A-24CC34A37197}|TrabalhoDaniel.Service\\TrabalhoDaniel.Service.csproj|solutionrelative:trabalhodaniel.service\\services\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CE11803-A810-4F7F-99F2-AF7B3549F12D}|TrabalhoDaniel.Repo\\TrabalhoDaniel.Repo.csproj|c:\\users\\g47664\\downloads\\trabalhodaniel\\trabalhodaniel.repo\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CE11803-A810-4F7F-99F2-AF7B3549F12D}|TrabalhoDaniel.Repo\\TrabalhoDaniel.Repo.csproj|solutionrelative:trabalhodaniel.repo\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CE11803-A810-4F7F-99F2-AF7B3549F12D}|TrabalhoDaniel.Repo\\TrabalhoDaniel.Repo.csproj|c:\\users\\g47664\\downloads\\trabalhodaniel\\trabalhodaniel.repo\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CE11803-A810-4F7F-99F2-AF7B3549F12D}|TrabalhoDaniel.Repo\\TrabalhoDaniel.Repo.csproj|solutionrelative:trabalhodaniel.repo\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D2A8612-FEC8-4F3B-B382-C229F9776768}|TrabalhoDaniel.Infra\\TrabalhoDaniel.Infra.csproj|c:\\users\\g47664\\downloads\\trabalhodaniel\\trabalhodaniel.infra\\services\\httpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D2A8612-FEC8-4F3B-B382-C229F9776768}|TrabalhoDaniel.Infra\\TrabalhoDaniel.Infra.csproj|solutionrelative:trabalhodaniel.infra\\services\\httpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D2A8612-FEC8-4F3B-B382-C229F9776768}|TrabalhoDaniel.Infra\\TrabalhoDaniel.Infra.csproj|c:\\users\\g47664\\downloads\\trabalhodaniel\\trabalhodaniel.infra\\services\\httpserviceusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D2A8612-FEC8-4F3B-B382-C229F9776768}|TrabalhoDaniel.Infra\\TrabalhoDaniel.Infra.csproj|solutionrelative:trabalhodaniel.infra\\services\\httpserviceusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D2A8612-FEC8-4F3B-B382-C229F9776768}|TrabalhoDaniel.Infra\\TrabalhoDaniel.Infra.csproj|c:\\users\\g47664\\downloads\\trabalhodaniel\\trabalhodaniel.infra\\services\\explica\u00E7\u00E3o.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1D2A8612-FEC8-4F3B-B382-C229F9776768}|TrabalhoDaniel.Infra\\TrabalhoDaniel.Infra.csproj|solutionrelative:trabalhodaniel.infra\\services\\explica\u00E7\u00E3o.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel\\Program.cs",
+              "RelativeDocumentMoniker": "TrabalhoDaniel\\Program.cs",
+              "ToolTip": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel\\Program.cs",
+              "RelativeToolTip": "TrabalhoDaniel\\Program.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAMwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:47:50.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IService.cs",
+              "DocumentMoniker": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Service\\Services\\IService.cs",
+              "RelativeDocumentMoniker": "TrabalhoDaniel.Service\\Services\\IService.cs",
+              "ToolTip": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Service\\Services\\IService.cs",
+              "RelativeToolTip": "TrabalhoDaniel.Service\\Services\\IService.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAcwAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:26:29.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Repo\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "TrabalhoDaniel.Repo\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Repo\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "TrabalhoDaniel.Repo\\Repositories\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:26:10.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HttpServiceUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Infra\\Services\\HttpServiceUsuarios.cs",
+              "RelativeDocumentMoniker": "TrabalhoDaniel.Infra\\Services\\HttpServiceUsuarios.cs",
+              "ToolTip": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Infra\\Services\\HttpServiceUsuarios.cs",
+              "RelativeToolTip": "TrabalhoDaniel.Infra\\Services\\HttpServiceUsuarios.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwB4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:23:10.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Explica\u00E7\u00E3o.txt",
+              "DocumentMoniker": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Infra\\Services\\Explica\u00E7\u00E3o.txt",
+              "RelativeDocumentMoniker": "TrabalhoDaniel.Infra\\Services\\Explica\u00E7\u00E3o.txt",
+              "ToolTip": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Infra\\Services\\Explica\u00E7\u00E3o.txt",
+              "RelativeToolTip": "TrabalhoDaniel.Infra\\Services\\Explica\u00E7\u00E3o.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-28T17:04:42.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HttpService.cs",
+              "DocumentMoniker": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Infra\\Services\\HttpService.cs",
+              "RelativeDocumentMoniker": "TrabalhoDaniel.Infra\\Services\\HttpService.cs",
+              "ToolTip": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Infra\\Services\\HttpService.cs",
+              "RelativeToolTip": "TrabalhoDaniel.Infra\\Services\\HttpService.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAUwDYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:01:53.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Repo\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "TrabalhoDaniel.Repo\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Repo\\Repositories\\Repository.cs",
+              "RelativeToolTip": "TrabalhoDaniel.Repo\\Repositories\\Repository.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwCcAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:01:47.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Service\\Services\\Service.cs",
+              "RelativeDocumentMoniker": "TrabalhoDaniel.Service\\Services\\Service.cs",
+              "ToolTip": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Service\\Services\\Service.cs",
+              "RelativeToolTip": "TrabalhoDaniel.Service\\Services\\Service.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAUwCoAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:01:45.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Controller.cs",
+              "DocumentMoniker": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel\\Controllers\\Controller.cs",
+              "RelativeDocumentMoniker": "TrabalhoDaniel\\Controllers\\Controller.cs",
+              "ToolTip": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel\\Controllers\\Controller.cs",
+              "RelativeToolTip": "TrabalhoDaniel\\Controllers\\Controller.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAcwEEAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:59:22.188Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

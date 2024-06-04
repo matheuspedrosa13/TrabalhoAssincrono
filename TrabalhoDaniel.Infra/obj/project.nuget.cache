@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8K974nmiIRiZlpOqio21RQM5tsIcXdaZfX4YGvJYCkgZwQ2himuBff8oltrUt+ENFPbkFImOceM0WDYi6aCnbA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Infra\\TrabalhoDaniel.Infra.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\G47664\\.nuget\\packages\\flurl\\4.0.0\\flurl.4.0.0.nupkg.sha512",
+    "C:\\Users\\G47664\\.nuget\\packages\\flurl.http\\4.0.2\\flurl.http.4.0.2.nupkg.sha512",
+    "C:\\Users\\G47664\\.nuget\\packages\\restsharp\\111.1.0\\restsharp.111.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
