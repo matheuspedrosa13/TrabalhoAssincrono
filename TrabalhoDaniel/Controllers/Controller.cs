@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TrabalhoDaniel.Infra.Services;
+using TrabalhoDaniel.Repo.Entities;
 using TrabalhoDaniel.Service.Services;
 
 namespace TrabalhoDaniel.Controllers;
@@ -13,67 +13,93 @@ public class Controller : ControllerBase
     {
         _service = service;
     }
-
-    /*HttpClient*/
-    [HttpGet("httpClient/json/todos")]
-    public async Task<string> GetAllExternalData()
+    [HttpPost("TrabalhoAsync/PostUser/")]
+    public async Task<User> PostUser()
     {
-        return await _service.GetAllExternalDataAsync();
+        return await _service.PostUser();
     }
 
-    [HttpGet("httpClient/json/todos/{id}")]
-    public async Task<IActionResult> GetOneExternalData(int id)
-    {
+    [HttpGet("TrabalhoAsync/GetUser/{email}")]
+    public async Task<User> GetUser(string email)
+    {   
         try
         {
-            string httpClient = await _service.GetOneExternalDataAsync(id);
-            return Ok(httpClient);
+            return await _service.GetUser(email);
         }
-        catch (Exception ex)
+        catch(Exception ex)
         {
-            return StatusCode(500, $"Error: {ex.Message}");
+            Console.WriteLine($"Um erro encontrado: {ex.Message}");
+            throw;
         }
     }
 
-    /*RestSharp*/
-    [HttpGet("RestSharp/json/todos")]
-    public async Task<string> GetAllExternalDataWithRestSharpAsync()
-    {
-        return await _service.GetAllExternalDataWithRestSharpAsync();
-    }
-
-    [HttpGet("RestSharp/json/todos/{id}")]
-    public async Task<IActionResult> GetOneExternalDataWithRestSharpAsync(int id)
-    {
+    [HttpGet("TrabalhoAsync/Login/{email}/{password}")]
+    public async Task<bool?> LoginUser(string email, string password)
+    {   
         try
         {
-            string restSharp = await _service.GetOneExternalDataWithRestSharpAsync(id);
-            return Ok(restSharp);
+            return await _service.LoginUser(email, password);
         }
-        catch (Exception ex)
+        catch(Exception ex)
         {
-            return StatusCode(500, $"Error: {ex.Message}");
+            Console.WriteLine($"Um erro encontrado: {ex.Message}");
+            throw;
         }
     }
 
-    /*FlurHttp*/
-    [HttpGet("FlurHttp/json/todos")]
-    public async Task<string> GetAllExternalDataWithFlurAsync()
-    {
-        return await _service.GetAllExternalDataWithFlurSharpAsync();
-    }
-
-    [HttpGet("FlurHttp/json/todos/{id}")]
-    public async Task<IActionResult> GetOneExternalDataWithFlurAsync(int id)
-    {
+    [HttpGet("TrabalhoAsync/Logout/{email}")]
+    public async Task<bool?> Logout(string email)
+    {   
         try
         {
-            string flurHttp = await _service.GetOneExternalDataWithFlurSharpAsync(id);
-            return Ok(flurHttp);
+            return await _service.LogoutUser(email);
         }
-        catch (Exception ex)
+        catch(Exception ex)
         {
-            return StatusCode(500, $"Error: {ex.Message}");
+            Console.WriteLine($"Um erro encontrado: {ex.Message}");
+            throw;
+        }
+    }
+
+    [HttpPut("TrabalhoAsync/CreateRelationship/{emailMainUser}/{emailAddedUser}")]
+    public async Task<User> CreateRelationship(string emailMainUser, string emailAddedUser)
+    {   
+        try
+        {
+            return await _service.CreateRelationship(emailMainUser, emailAddedUser);
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine($"Um erro encontrado: {ex.Message}");
+            throw;
+        }
+    }
+
+    [HttpPut("TrabalhoAsync/RemoveRelationship/{emailMainUser}/{emailRemoveUser}")]
+    public async Task<User> RemoveRelationship(string emailMainUser, string emailRemoveUser)
+    {   
+        try
+        {
+            return await _service.RemoveRelationShip(emailMainUser, emailRemoveUser);
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine($"Um erro encontrado: {ex.Message}");
+            throw;
+        }
+    }
+
+    [HttpPut("TrabalhoAsync/RecommendationUser/{emailMainUser}")]
+    public async Task<List<string>> RecommendationUser(string emailMainUser)
+    {   
+        try
+        {
+            return await _service.RecommedationUser(emailMainUser);
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine($"Um erro encontrado: {ex.Message}");
+            throw;
         }
     }
 }
