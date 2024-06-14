@@ -123,11 +123,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Infra\\TrabalhoDaniel.Infra.csproj",
+      "projectUniqueName": "C:\\Users\\G47664\\Desktop\\C#\\assincrono\\TrabalhoAssincrono\\TrabalhoDaniel.Infra\\TrabalhoDaniel.Infra.csproj",
       "projectName": "TrabalhoDaniel.Infra",
-      "projectPath": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Infra\\TrabalhoDaniel.Infra.csproj",
+      "projectPath": "C:\\Users\\G47664\\Desktop\\C#\\assincrono\\TrabalhoAssincrono\\TrabalhoDaniel.Infra\\TrabalhoDaniel.Infra.csproj",
       "packagesPath": "C:\\Users\\G47664\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\G47664\\Downloads\\TRABALHODANIEL\\TrabalhoDaniel.Infra\\obj\\",
+      "outputPath": "C:\\Users\\G47664\\Desktop\\C#\\assincrono\\TrabalhoAssincrono\\TrabalhoDaniel.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

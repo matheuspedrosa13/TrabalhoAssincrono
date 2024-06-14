@@ -23,3 +23,16 @@ C:\Users\G47664\Downloads\TRABALHODANIEL\TrabalhoDaniel.Infra\obj\Debug\net8.0\r
 C:\Users\G47664\Downloads\TRABALHODANIEL\TrabalhoDaniel.Infra\obj\Debug\net8.0\TrabalhoDaniel.Infra.pdb
 C:\Users\G47664\Downloads\TRABALHODANIEL\TrabalhoDaniel.Infra\obj\Debug\net8.0\ref\TrabalhoDaniel.Infra.dll
 C:\Users\G47664\Downloads\TRABALHODANIEL\TrabalhoDaniel.Infra\obj\Debug\net8.0\TrabalhoDaniel.Infra.csproj.AssemblyReference.cache
+C:\Users\G47664\Desktop\C#\assincrono\TrabalhoAssincrono\TrabalhoDaniel.Infra\bin\Debug\net8.0\TrabalhoDaniel.Infra.deps.json
+C:\Users\G47664\Desktop\C#\assincrono\TrabalhoAssincrono\TrabalhoDaniel.Infra\bin\Debug\net8.0\TrabalhoDaniel.Infra.dll
+C:\Users\G47664\Desktop\C#\assincrono\TrabalhoAssincrono\TrabalhoDaniel.Infra\bin\Debug\net8.0\TrabalhoDaniel.Infra.pdb
+C:\Users\G47664\Desktop\C#\assincrono\TrabalhoAssincrono\TrabalhoDaniel.Infra\obj\Debug\net8.0\TrabalhoDaniel.Infra.csproj.AssemblyReference.cache
+C:\Users\G47664\Desktop\C#\assincrono\TrabalhoAssincrono\TrabalhoDaniel.Infra\obj\Debug\net8.0\TrabalhoDaniel.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\G47664\Desktop\C#\assincrono\TrabalhoAssincrono\TrabalhoDaniel.Infra\obj\Debug\net8.0\TrabalhoDaniel.Infra.AssemblyInfoInputs.cache
+C:\Users\G47664\Desktop\C#\assincrono\TrabalhoAssincrono\TrabalhoDaniel.Infra\obj\Debug\net8.0\TrabalhoDaniel.Infra.AssemblyInfo.cs
+C:\Users\G47664\Desktop\C#\assincrono\TrabalhoAssincrono\TrabalhoDaniel.Infra\obj\Debug\net8.0\TrabalhoDaniel.Infra.csproj.CoreCompileInputs.cache
+C:\Users\G47664\Desktop\C#\assincrono\TrabalhoAssincrono\TrabalhoDaniel.Infra\obj\Debug\net8.0\TrabalhoDaniel.Infra.sourcelink.json
+C:\Users\G47664\Desktop\C#\assincrono\TrabalhoAssincrono\TrabalhoDaniel.Infra\obj\Debug\net8.0\TrabalhoDaniel.Infra.dll
+C:\Users\G47664\Desktop\C#\assincrono\TrabalhoAssincrono\TrabalhoDaniel.Infra\obj\Debug\net8.0\refint\TrabalhoDaniel.Infra.dll
+C:\Users\G47664\Desktop\C#\assincrono\TrabalhoAssincrono\TrabalhoDaniel.Infra\obj\Debug\net8.0\TrabalhoDaniel.Infra.pdb
+C:\Users\G47664\Desktop\C#\assincrono\TrabalhoAssincrono\TrabalhoDaniel.Infra\obj\Debug\net8.0\ref\TrabalhoDaniel.Infra.dll

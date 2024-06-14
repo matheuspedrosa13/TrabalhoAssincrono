@@ -1,4 +1,5 @@
 ﻿using TrabalhoDaniel.Infra.Services;
+using TrabalhoDaniel.Repo.Entities;
 using TrabalhoDaniel.Repo.Repositories;
 
 namespace TrabalhoDaniel.Service.Services;
@@ -12,36 +13,48 @@ public class Service : IService
         _repository = repository;
     }
 
-    /*HttpClient*/
-    public Task<string> GetAllExternalDataAsync()
+
+    public async Task<User> PostUser()
     {
-        return _repository.GetAllDataAsync();
+        string url = "https://api.invertexto.com/v1/faker?token=8137%7CBmRErcROxFRfvhTZWYIvEYL4Er5bfVKt"; // Coloque a URL correta aqui
+        User user = await _repository.PostUserAsync(url);
+        await _repository.SaveUserToMongoDB(user);
+        return user;
     }
 
-    public Task<string> GetOneExternalDataAsync(int id)
+    public async Task<User> GetUser(string email)
     {
-        return _repository.GetOneDataAsync(id); 
+        User user = await _repository.GetUserByEmail(email);
+        return user;
     }
 
-    /*RestSharp*/
-    public Task<string> GetAllExternalDataWithRestSharpAsync()
+    public async Task<bool?> LoginUser(string email, string password)
     {
-        return _repository.GetAllExternalDataWithRestSharpAsync();
+        bool? user = await _repository.LoginUser(email, password);
+        return user;
     }
 
-    public Task<string> GetOneExternalDataWithRestSharpAsync(int id)
+    public async Task<bool?> LogoutUser(string email)
     {
-        return _repository.GetOneExternalDataWithRestSharpAsync(id);
+        bool? user = await _repository.LogoutUser(email);
+        return user;
     }
 
-    /*FlurHttp*/
-    public Task<string> GetAllExternalDataWithFlurSharpAsync()
+    public async Task<User> CreateRelationship(string emailMainUser, string emailAddedUser)
     {
-        return _repository.GetAllExternalDataWithFlurHttpAsync();
+        User userMain = await _repository.CreateRelationship(emailMainUser, emailAddedUser);
+        return userMain;
     }
 
-    public Task<string> GetOneExternalDataWithFlurSharpAsync(int id)
+    public async Task<User> RemoveRelationShip(string emailMainUser, string emailRemoveUser)
     {
-        return _repository.GetOneExternalDataWithFlurHttpAsync(id);
+        User userMain = await _repository.RemoveRelationship(emailMainUser, emailRemoveUser);
+        return userMain;
+    }
+
+    public async Task<List<string>> RecommedationUser(string emailMainUser)
+    {
+        List<string> listaUser = await _repository.RecommendUsers(emailMainUser);
+        return listaUser;
     }
 }
