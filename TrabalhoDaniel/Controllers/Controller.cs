@@ -89,7 +89,7 @@ public class Controller : ControllerBase
         }
     }
 
-    [HttpPut("TrabalhoAsync/RecommendationUser/{emailMainUser}")]
+    [HttpGet("TrabalhoAsync/RecommendationUser/{emailMainUser}")]
     public async Task<List<string>> RecommendationUser(string emailMainUser)
     {   
         try
