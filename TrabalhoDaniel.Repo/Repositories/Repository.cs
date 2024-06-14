@@ -171,25 +171,24 @@ public class Repository : IRepository<string>
             throw new Exception("Usuário não encontrado.");
         }
 
-        // Obter todas as relações do usuário principal
         var userRelations = mainUser.Relacoes;
-
-        // Dicionário para armazenar a contagem de recomendações
-        var recommendations = new Dictionary<string, int>();
-        if(userRelations == null){
+        if (userRelations == null || !userRelations.Any())
+        {
             throw new Exception("Usuário não tem relações existentes.");
         }
-        
+
+        var recommendations = new Dictionary<string, int>();
+
         foreach (var relationEmail in userRelations)
         {
             var filterRelation = Builders<User>.Filter.Eq(r => r.Email, relationEmail);
             var relationUser = await collection.Find(filterRelation).FirstOrDefaultAsync();
 
-            if (relationUser != null)
+            if (relationUser != null && relationUser.Relacoes != null)
             {
-                foreach (var rec in relationUser.Relacoes!)
+                foreach (var rec in relationUser.Relacoes)
                 {
-                    if (rec != email && !userRelations.Contains(rec))  // Não recomendamos o próprio usuário ou alguém que já está nas relações
+                    if (rec != email && !userRelations.Contains(rec))
                     {
                         if (recommendations.ContainsKey(rec))
                         {
@@ -204,7 +203,10 @@ public class Repository : IRepository<string>
             }
         }
 
-        var recommendedUsers = recommendations.Where(r => r.Value >= 2).Select(r => r.Key).ToList();
+        var recommendedUsers = recommendations
+            .Where(r => r.Value >= 2)
+            .Select(r => r.Key)
+            .ToList();
 
         return recommendedUsers;
     }
