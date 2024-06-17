@@ -102,4 +102,18 @@ public class Controller : ControllerBase
             throw;
         }
     }
+
+    [HttpGet("TrabalhoAsync/GetAllUser/")]
+    public async Task<List<User>> GetAllUser()
+    {   
+        try
+        {
+            return await _service.GetAllUser();
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine($"Um erro encontrado: {ex.Message}");
+            throw;
+        }
+    }
 }
