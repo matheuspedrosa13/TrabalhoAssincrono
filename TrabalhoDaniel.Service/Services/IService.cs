@@ -11,4 +11,5 @@ public interface IService
     Task<User> CreateRelationship(string emailMainUser, string emailAddedUser);
     Task<User> RemoveRelationShip(string emailMainUser, string emailRemoveUser);
     Task<List<string>> RecommedationUser(string emailMainUser);
+    Task<List<User>> GetAllUser();
 }

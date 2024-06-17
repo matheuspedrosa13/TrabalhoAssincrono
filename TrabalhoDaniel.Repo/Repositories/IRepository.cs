@@ -12,4 +12,5 @@ public interface IRepository<T>
     Task<User> CreateRelationship(string emailMainUser, string emailUserAdded);
     Task<User> RemoveRelationship(string emailMainUser, string emailUserRemoved);
     Task<List<string>> RecommendUsers(string email);
+    Task<List<User>> GetAllUser();
 }

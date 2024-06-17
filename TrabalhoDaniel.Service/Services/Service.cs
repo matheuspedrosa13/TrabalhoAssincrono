@@ -57,4 +57,10 @@ public class Service : IService
         List<string> listaUser = await _repository.RecommendUsers(emailMainUser);
         return listaUser;
     }
+
+    public async Task<List<User>> GetAllUser()
+    {
+        List<User> listaUser = await _repository.GetAllUser();
+        return listaUser;
+    }
 }

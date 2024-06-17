@@ -48,6 +48,16 @@ public class Repository : IRepository<string>
         }
     }
 
+    public async Task<List<User>> GetAllUser()
+    {
+        var client = new MongoClient(connectionString);
+        var database = client.GetDatabase(databaseName);
+        var collection = database.GetCollection<User>(collectionName);
+
+        var allUsers = await collection.Find(Builders<User>.Filter.Empty).ToListAsync();
+        return allUsers;
+    }
+
     public async Task<User> GetUserByEmail(string email){
         var client = new MongoClient(connectionString);
         var database = client.GetDatabase(databaseName);
