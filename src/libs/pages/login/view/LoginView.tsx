@@ -1,6 +1,6 @@
 import './style.less';
 import { LoginViewProps } from '../types'; 
-import { BrownButton, GrayInput } from '../../../components';
+import { BrownButton, GrayInput, LoadingCircle } from '../../../components';
 
 export function LoginView({
   email,
@@ -8,7 +8,9 @@ export function LoginView({
   senha,
   setSenha,
   onSubmit,
-  emailIsError
+  emailIsError,
+  loginFail,
+  isLoading
 } : LoginViewProps) {
   return (
     <div className='LoginView'>
@@ -18,7 +20,12 @@ export function LoginView({
         </header>
         <form action="" onSubmit={onSubmit}>
           <GrayInput placeHolder='Email' setValue={setEmail} value={email} errorMessage='Formato de email inválido' isError={emailIsError}/>
-          <GrayInput placeHolder='Senha' setValue={setSenha} value={senha}/>
+          <GrayInput placeHolder='Senha' setValue={setSenha} value={senha} errorMessage='Login falhou' isError={loginFail}/>
+          {
+            isLoading && (
+              <LoadingCircle className='loading'/>
+            )
+            }
           <BrownButton text='Login' onClick={() => {}}/>
         </form>
       </main>

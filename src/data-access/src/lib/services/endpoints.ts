@@ -9,6 +9,8 @@ export const Endpoints = {
     relationShip: {
         createRelationship: `https://trabalhoassincrono-3.onrender.com/api/TrabalhoAsync/CreateRelationship/` /*  emailMainUser / emailAddedUser  (PUT)*/,
         removeRelationship: `https://trabalhoassincrono-3.onrender.com/api/TrabalhoAsync/RemoveRelationship/` /* emailMainUser / emailRemoveUser (PUT)*/,
-        recommendationUser: `https://trabalhoassincrono-3.onrender.com/api/TrabalhoAsync/RecommendationUser/` /* emailMainUser (GET)*/
+        recommendationUser: `https://trabalhoassincrono-3.onrender.com/api/TrabalhoAsync/RecommendationUser/` /* emailMainUser (GET)*/ ,
+        getAllRelationShip: `https://trabalhoassincrono-3.onrender.com/api/TrabalhoAsync/RelationsUser/` /*{emailMainUser} */
+        
     }
 } 

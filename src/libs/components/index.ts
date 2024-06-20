@@ -1,2 +1,7 @@
 export * from './BrownButton'
 export * from './GrayInput'
+export * from './SideBar'
+export * from './OptionButton'
+export * from './RecomandationBox'
+export * from './SearchBar'
+export * from './LoadingCircle'

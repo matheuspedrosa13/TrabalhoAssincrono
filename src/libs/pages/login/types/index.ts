@@ -6,4 +6,6 @@ export interface LoginViewProps{
     setSenha: (value : string) => void;
     onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
     emailIsError: boolean;
+    loginFail: boolean;
+    isLoading: boolean;
 }
