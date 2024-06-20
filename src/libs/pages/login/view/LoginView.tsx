@@ -8,6 +8,7 @@ export function LoginView({
   senha,
   setSenha,
   onSubmit,
+  emailIsError
 } : LoginViewProps) {
   return (
     <div className='LoginView'>
@@ -15,8 +16,8 @@ export function LoginView({
         <header>
           <h1>Login</h1>
         </header>
-        <form action="">
-          <GrayInput placeHolder='Email' setValue={setEmail} value={email}/>
+        <form action="" onSubmit={onSubmit}>
+          <GrayInput placeHolder='Email' setValue={setEmail} value={email} errorMessage='Formato de email inválido' isError={emailIsError}/>
           <GrayInput placeHolder='Senha' setValue={setSenha} value={senha}/>
           <BrownButton text='Login' onClick={() => {}}/>
         </form>

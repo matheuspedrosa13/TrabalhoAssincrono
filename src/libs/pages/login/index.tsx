@@ -8,7 +8,8 @@ const {
   senha,
   setEmail,
   setSenha,
-  onSubmit
+  onSubmit,
+  emailIsError,
 } = useLogin();
   return (
 <LoginView
@@ -17,6 +18,7 @@ onSubmit={onSubmit}
 senha={senha}
 setSenha={setSenha}
 setEmail={setEmail}
+emailIsError={emailIsError}
 />
   );
 }
