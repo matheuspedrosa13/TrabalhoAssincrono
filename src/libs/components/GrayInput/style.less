@@ -1,0 +1,43 @@
+.GrayInput {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    gap: 4px;
+    p{
+        width: 100%;
+        margin: 0px;
+        padding-right: 10px;
+        color: red;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 4px;
+    }
+    .input{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        h2{
+            margin: 0px;
+            padding-left: 10px;
+        }
+        input {
+            font-size: 1.3rem;
+            max-width: 100%;
+            padding: 4% 0px 4% 15px;
+            background-color: #182130;
+            border: none;
+            border-radius: 15px;
+            border: 1px solid gray;
+            color: white;
+            &:focus {
+                outline: 2px solid var(--general-green);
+            }
+        }
+    }
+}

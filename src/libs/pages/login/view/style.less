@@ -1,0 +1,56 @@
+.LoginView{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    main{
+        width: 35%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        // background-color: white;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 30px;
+        padding: 0% 4%;
+        background-color: #182130;
+        header{
+            width: 100%;
+            h1{
+                font-size: 3rem;
+            }
+        }
+        form{
+            min-width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .input, button{
+                width: 100%;
+                border-radius: 10px;
+            }
+            button{
+                margin-top: 15px;
+            }
+        }
+    }
+    aside{
+        flex-grow: 1;
+        background-color: #1E293B;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+        max-width: 70%;
+        gap: 30px;
+        padding: 0% 8%;
+        h1{
+            font-size: 3rem;
+        }
+        h3{
+            font-weight: 100;
+            color: rgb(194, 192, 192);
+        }
+    }
+}
