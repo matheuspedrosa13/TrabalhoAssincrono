@@ -10,6 +10,7 @@ export function HomeView({
     onSearch,
     searchValue,
     setSearchValue,
+    perfil
 } : HomeViewProps) {
   return (
     <div className='HomeView'>
@@ -25,6 +26,18 @@ export function HomeView({
                     value={searchValue}
                     className='searchBarApp'
                 />
+            {
+                perfil.valid && (
+                    <div className="perfil">
+                        <h1>{perfil.nome}</h1>
+                        <section className='infoPerfil'>
+                            
+                        </section>
+                        <footer></footer>
+                    </div>
+                )
+            }
+                
             </main>
             <aside className='recomendation'>
                 {

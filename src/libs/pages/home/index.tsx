@@ -11,6 +11,7 @@ const {
     onSearch,
     searchValue,
     setSearchValue,
+    perfil,
 } = useHome();
   return (
 <HomeView
@@ -21,6 +22,7 @@ const {
     onSearch={onSearch}
     searchValue={searchValue}
     setSearchValue={setSearchValue}
+    perfil={perfil}
 />
   );
 }

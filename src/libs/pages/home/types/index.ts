@@ -10,4 +10,5 @@ export interface HomeViewProps{
     onSearch: () => void;
     setSearchValue: (value : string) => void;
     searchValue: string;
+    perfil: any;
 }

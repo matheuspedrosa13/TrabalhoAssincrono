@@ -1,6 +1,6 @@
 import { useAtom } from "jotai";
-import { useState } from "react";
-import { loginInfoAtom } from "../../../data-access";
+import { useEffect, useState } from "react";
+import { loginInfoAtom, perfilAtom } from "../../../data-access";
 import { useNavigate } from "react-router-dom";
 
 export function useHome() {
@@ -38,6 +38,7 @@ export function useHome() {
     },
   ])
   const [searchValue, setSearchValue] = useState('')
+  const [perfil, setPerfil] = useAtom(perfilAtom)
   const navigate = useNavigate()
 
   function logOut(){
@@ -60,6 +61,7 @@ export function useHome() {
     recomendatioArr,
     onSearch,
     searchValue,
-    setSearchValue
+    setSearchValue,
+    perfil
   };
 }

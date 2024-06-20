@@ -7,8 +7,6 @@ export function RecomendationBox({
     username,
     name,
 } : RecomendationBoxProps) {
-    const navigate = useNavigate()
-
     return (
     <div className='RecomendationBox'>
         <header>
@@ -16,7 +14,7 @@ export function RecomendationBox({
             <h3>{username}</h3>
         </header>
         <OptionButton text='Ver Perfil' classname='verPerfil' onClick={() => {
-            navigate(`/perfil/${username}`)
+            
         }}/>
     </div>
   );
