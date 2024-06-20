@@ -20,8 +20,6 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "TrabalhoDaniel API", Version = "v1" });
 });
 
-var app = builder.Build();
-
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder =>
@@ -32,6 +30,8 @@ builder.Services.AddCors(options =>
                 .WithMethods("GET");
     });
 });
+
+var app = builder.Build();
 
 // Configura o pipeline de processamento de solicitações HTTP.
 if (app.Environment.IsDevelopment())
