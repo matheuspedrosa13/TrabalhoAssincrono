@@ -220,5 +220,22 @@ public class Repository : IRepository<string>
 
         return recommendedUsers;
     }
+    
+    public async Task<List<string>> GetUserRelations(string email)
+    {
+        var client = new MongoClient(connectionString);
+        var database = client.GetDatabase(databaseName);
+        var collection = database.GetCollection<User>(collectionName);
+
+        var filterEmail = Builders<User>.Filter.Eq(r => r.Email, email);
+        var user = await collection.Find(filterEmail).FirstOrDefaultAsync();
+
+        if (user == null)
+        {
+            throw new Exception("Usuário não encontrado.");
+        }
+
+        return user.Relacoes ?? new List<string>();
+    }
 
 } 

@@ -103,6 +103,20 @@ public class Controller : ControllerBase
         }
     }
 
+    [HttpGet("TrabalhoAsync/RelationsUser/{emailMainUser}")]
+    public async Task<List<string>> RelationsUser(string emailMainUser)
+    {   
+        try
+        {
+            return await _service.GetUserRelations(emailMainUser);
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine($"Um erro encontrado: {ex.Message}");
+            throw;
+        }
+    }
+
     [HttpGet("TrabalhoAsync/GetAllUser/")]
     public async Task<List<User>> GetAllUser()
     {   
