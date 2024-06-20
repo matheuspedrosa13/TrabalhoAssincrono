@@ -69,7 +69,7 @@ public class Repository : IRepository<string>
         return await collection.Find(filter).FirstAsync();
     }
 
-    public async Task<bool?> LoginUser(string email, string password){
+    public async Task<string> LoginUser(string email, string password){
         var client = new MongoClient(connectionString);
         var database = client.GetDatabase(databaseName);
         var collection = database.GetCollection<User>(collectionName);
@@ -79,24 +79,23 @@ public class Repository : IRepository<string>
 
         if (user == null)
         {
-            throw new Exception("Usuário não encontrado.");
+            return "Usuário não encontrado.";
         }
-        if (user.Logado == true)
-        {
-            throw new Exception("Usuário já logado.");
-        }
+
         if (user.Password != password)
         {
-            throw new Exception("Senha incorreta.");
+
+           return "Senha incorreta.";
         }
+        
         var update = Builders<User>.Update
         .Set(user => user.Logado, true);
 
         await collection.UpdateOneAsync(filterEmail, update);
-        return user.Logado;
+        return "Logado";
     }
 
-    public async Task<bool?> LogoutUser(string email){
+    public async Task<string> LogoutUser(string email){
         var client = new MongoClient(connectionString);
         var database = client.GetDatabase(databaseName);
         var collection = database.GetCollection<User>(collectionName);
@@ -106,19 +105,14 @@ public class Repository : IRepository<string>
 
         if (user == null)
         {
-            throw new Exception("Usuário não encontrado.");
-        }
-
-        if (user.Logado == false)
-        {
-            throw new Exception("Usuário já deslogado.");
+            return "Usuário não encontrado.";
         }
 
         var update = Builders<User>.Update
         .Set(user => user.Logado, false);
 
         await collection.UpdateOneAsync(filterEmail, update);
-        return user.Logado;
+        return "Deslogado";
     }
 
     public async Task<User> CreateRelationship(string emailMainUser, string emailUserAdded)
@@ -238,4 +232,20 @@ public class Repository : IRepository<string>
         return user.Relacoes ?? new List<string>();
     }
 
+    public async Task<bool?> GetLoginUser(string email)
+    {
+        var client = new MongoClient(connectionString);
+        var database = client.GetDatabase(databaseName);
+        var collection = database.GetCollection<User>(collectionName);
+
+        var filterEmail = Builders<User>.Filter.Eq(r => r.Email, email);
+        var user = await collection.Find(filterEmail).FirstOrDefaultAsync();
+
+        if (user == null)
+        {
+            throw new Exception("Usuário não encontrado.");
+        }
+
+        return user.Logado;
+    }
 } 

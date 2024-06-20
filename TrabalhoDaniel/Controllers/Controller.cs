@@ -34,7 +34,7 @@ public class Controller : ControllerBase
     }
 
     [HttpGet("TrabalhoAsync/Login/{email}/{password}")]
-    public async Task<bool?> LoginUser(string email, string password)
+    public async Task<string> LoginUser(string email, string password)
     {   
         try
         {
@@ -48,7 +48,7 @@ public class Controller : ControllerBase
     }
 
     [HttpGet("TrabalhoAsync/Logout/{email}")]
-    public async Task<bool?> Logout(string email)
+    public async Task<string> Logout(string email)
     {   
         try
         {
@@ -117,6 +117,21 @@ public class Controller : ControllerBase
         }
     }
 
+    [HttpGet("TrabalhoAsync/VerifyLoginUser/{emailMainUser}")]
+    public async Task<bool?> VerifyLoginUser(string emailMainUser)
+    {   
+        try
+        {
+            return await _service.GetLoginUser(emailMainUser);
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine($"Um erro encontrado: {ex.Message}");
+            throw;
+        }
+    }
+
+
     [HttpGet("TrabalhoAsync/GetAllUser/")]
     public async Task<List<User>> GetAllUser()
     {   
@@ -130,4 +145,6 @@ public class Controller : ControllerBase
             throw;
         }
     }
+
+    
 }

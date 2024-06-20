@@ -1,4 +1,5 @@
-﻿using TrabalhoDaniel.Infra.Services;
+﻿using System.Reflection.Metadata;
+using TrabalhoDaniel.Infra.Services;
 using TrabalhoDaniel.Repo.Entities;
 using TrabalhoDaniel.Repo.Repositories;
 
@@ -28,15 +29,15 @@ public class Service : IService
         return user;
     }
 
-    public async Task<bool?> LoginUser(string email, string password)
+    public async Task<string> LoginUser(string email, string password)
     {
-        bool? user = await _repository.LoginUser(email, password);
+        string user = await _repository.LoginUser(email, password);
         return user;
     }
 
-    public async Task<bool?> LogoutUser(string email)
+    public async Task<string> LogoutUser(string email)
     {
-        bool? user = await _repository.LogoutUser(email);
+        string user = await _repository.LogoutUser(email);
         return user;
     }
 
@@ -68,5 +69,11 @@ public class Service : IService
     {
         List<string> listaUser = await _repository.GetUserRelations(email);
         return listaUser;
+    }
+
+    public async Task<bool?> GetLoginUser(string email)
+    {
+        bool? userLogin = await _repository.GetLoginUser(email);
+        return userLogin;
     }
 }
