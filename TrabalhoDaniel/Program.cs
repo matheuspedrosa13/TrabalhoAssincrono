@@ -6,14 +6,14 @@ using Microsoft.Graph;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adicione os serviços ao contêiner.
+// Adicione os serviÃ§os ao contÃªiner.
 builder.Services.AddControllers();
 // Adiciona HttpClient
 builder.Services.AddHttpClient<HttpService>();
-// Adiciona repositórios e serviços
+// Adiciona repositÃ³rios e serviÃ§os
 builder.Services.AddScoped<IRepository<string>, Repository>();
 builder.Services.AddScoped<IService, Service>();
-// Configura o Swagger para documentação da API.
+// Configura o Swagger para documentaÃ§Ã£o da API.
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -22,7 +22,18 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-// Configura o pipeline de processamento de solicitações HTTP.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .WithMethods("GET");
+    });
+});
+
+// Configura o pipeline de processamento de solicitaÃ§Ãµes HTTP.
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -30,9 +41,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "TrabalhoDaniel API V1");
-
     });
 }
+
+app.UseCors("AllowAll");
 
 app.UseHttpsRedirection();
 
